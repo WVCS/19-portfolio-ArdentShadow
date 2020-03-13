@@ -1,1 +1,262 @@
-<p> This is a Test </p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Event" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #333333;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10.0s;
+  animation-name: fade;
+  animation-duration: 10.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+body {
+Background-color: #333333
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul{
+	display: flex;
+	width: 100%;
+	height: 8vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+a {
+color: white ;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  }
+  .grid-container {
+  color: white;
+  }
+  img.news-image {
+  background: #dadada;
+  height: 400px;
+  width: 400px;
+  margin: 50px ;
+}
+p.news-info {
+  margin-top: 90px;
+  margin-right: 10px;
+  margin-left: 20px;
+  width: 1350px;
+font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  color: white;
+  
+}
+.news-item {
+  clear: both;
+}
+.news-item:nth-child(odd) div.news-info {
+  float: right;
+}
+.news-item:nth-child(odd) div.news-image {
+  float: left;
+}
+.news-item:nth-child(even) div.news-info {
+  float: left;
+}
+.news-item:nth-child(even) div.news-image {
+  float: right;
+}
+
+</style>
+</head>
+<body>
+  <ul>
+  <li><a href=""> Home </a>
+  <li><a href=""> About </a></li>
+  <li><a href=""> Events </a></li>
+  <li><a href=""> Locations </a></li>
+</ul>
+
+<div class="slides">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://mail.google.com/mail/u/0?ui=2&ik=a8d06199ec&attid=0.5&permmsgid=msg-a:r2037584910766319591&th=170cb52411698d8e&view=fimg&realattid=f_k7nsczby0&disp=thd&attbid=ANGjdJ_NeEnY5XE5hjCl8Vv9tQ9wMPBXG6KbA27ELI_Xan3-JmSD3DoAjKRNn9pf7Fk_J3X5fG2unC0QG3idODbyjk_RE6XQij6di08aGkupIM0_jpsnFkmfnZ0wvqc&ats=2524608000000&sz=w1920-h937" style="width:100% ">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://mail.google.com/mail/u/0?ui=2&ik=a8d06199ec&attid=0.4&permmsgid=msg-a:r2037584910766319591&th=170cb52411698d8e&view=fimg&realattid=f_k7nsczcu1&disp=thd&attbid=ANGjdJ-LkX_BsagA0-5XIbwJ7Y6yVCiWx5zu-FS7oRCemqpg6jHQ1hWLb0M-OVkzX5vMAI26Kugntk-a1_zxkdHGEfxubkiP9uTq9O9FtnfWcC82Td6kLspS-XeeEF8&ats=2524608000000&sz=w1920-h937" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://mail.google.com/mail/u/0?ui=2&ik=a8d06199ec&attid=0.8&permmsgid=msg-a:r2037584910766319591&th=170cb52411698d8e&view=fimg&realattid=f_k7nscze27&disp=thd&attbid=ANGjdJ-TeT5MyHzquy3cX0bbCRubErjrHO-g2cpizm7CrrOkYOTxpE580eUTb3FCAKKPWv8OYvX5edAv8haUbFnwNuewQexsSlAIhe2AER_gVZ2Egya-QAIOskTlZnY&ats=2524608000000&sz=w1920-h937" style="width:100%">
+</div>
+
+</div>
+<br>
+
+  
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<div class="news-list">
+  <div class="news-item">
+    <div class="news-image">
+      <img class="news-image" src="https://images-na.ssl-images-amazon.com/images/I/71ZfJGpShlL.jpg" />
+    </div>
+    <div class="news-info">
+      <p class="news-info">
+        Fruits Basket (Japanese: フルーツバスケット, Hepburn: Furūtsu Basuketto), sometimes abbreviated Furuba or Fruba (フルバ), is a Japanese shōjo manga series written and illustrated by Natsuki Takaya. It was serialized in the semi-monthly Japanese magazine Hana to Yume, published by Hakusensha, from 1998 to 2006. The series' title comes from the name of a popular game played in Japanese elementary schools, which is alluded to in the series.
+
+Fruits Basket tells the story of Tohru Honda, an orphan girl who, after meeting Yuki, Kyo, and Shigure Sohma, learns that twelve members of the Sohma family are possessed by the animals of the Chinese zodiac (十二支, Jūnishi) and are cursed to turn into their animal forms when they are weak, stressed, or when they are embraced by anyone of the opposite sex that is not possessed by a zodiacal spirit. As the series progresses, Tohru learns of the hardships and pain faced by the afflicted Sohmas, and through her own generous and loving nature, helps heal their emotional wounds. As she learns more about Yuki, Kyo, and the rest of the mysterious Sohma family, Tohru also learns more about herself and how much others care for her.
+
+The series was also adapted into a 26-episode anime series in 2001, directed by Akitaro Daichi. A new anime television series adaptation produced by TMS Entertainment and directed by Yoshihide Ibata premiered on April 2019, which will adapt the entire manga. The first season of the 2019 reboot was 25 episodes long. The second season will premiere on April 7th, 2020.
+
+The anime series is licensed in North America under the Crunchyroll-Funimation partnership.[5]
+      </p>
+    </div>
+  </div>
+
+  <div class="news-item">
+    <div class="news-image">
+      <img class="news-image" src="https://images.8tracks.com/cover/i/008/695/475/8trax-8714.png?rect=0,0,800,800&q=98&fm=jpg&fit=max "  />
+    </div>
+    <div class="news-info">
+      <p class="news-info">
+Tokyo Ghoul (Japanese: 東京喰種トーキョーグール, Hepburn: Tōkyō Gūru) is a Japanese dark fantasy manga series written and illustrated by Sui Ishida. It was serialized in Shueisha's seinen manga magazine Weekly Young Jump between September 2011 and September 2014, and it has been collected in fourteen tankōbon volumes as of August 2014. A sequel titled Tokyo Ghoul:re was serialized in the same magazine between October 2014 and July 2018, and was later collected into sixteen tankōbon volumes. A prequel titled Tokyo Ghoul [Jack] ran online on Jump Live.
+
+A 12-episode anime television series adaptation by studio Pierrot aired on Tokyo MX between July 4, 2014, and September 19, 2014. A 12-episode second season, Tokyo Ghoul √A (pronounced Tokyo Ghoul Root A), which follows an original story, began airing on January 9, 2015, and concluded on March 27, 2015. In North America, Viz Media is publishing the manga while Funimation has licensed the anime series for streaming and home video distribution.
+
+A live-action film based on the manga was released in Japan on July 29, 2017. An anime adaptation based on the sequel manga Tokyo Ghoul:re began airing from April 3, 2018, and concluded on December 25, 2018, with the series being split into two seasons.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+
